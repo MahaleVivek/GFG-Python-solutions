@@ -1,0 +1,16 @@
+Given an integer array arr of size n, you need to sum the elements of arr.
+
+def sumElement(arr,n):
+    #code here
+    add = 0
+    
+    for i in range(n):
+        add += arr[i]
+        
+    return add
+
+
+#Input:
+#n = 3
+#arr[] = {3 2 1}
+#Output: 6
