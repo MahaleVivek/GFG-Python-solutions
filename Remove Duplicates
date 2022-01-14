@@ -1,0 +1,18 @@
+Given a string without spaces, the task is to remove duplicates from it.
+
+Note: The original order of characters must be kept the same.
+
+class Solution:
+	def removeDups(self, S):
+		# code here
+		result = []
+        for c in S:
+            if c not in result:
+                result.append(c)
+        result = ''.join(result)
+        
+        return result
+
+#Input: S = "zvvo"
+#Output: "zvo"
+#Explanation: Only keep the first occurrence
