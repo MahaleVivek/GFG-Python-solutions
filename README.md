@@ -1,4 +1,4 @@
 # GFG-Python-solutions
-Solved Python solution from `GeeksforGeeks`
+Solved Python Practice solution from `GeeksforGeeks`
 
 https://auth.geeksforgeeks.org/user/vivekmahale9853
