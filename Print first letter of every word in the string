@@ -1,0 +1,12 @@
+Given a string S, the task is to create a string with the first letter of every word in the string.
+
+class Solution:
+	def firstAlphabet(self, S):
+		# code here
+		arr = S.split(sep=' ')
+		return ''.join(i[0] for i in arr)
+		    
+
+#Input: 
+#S = "geeks for geeks"
+#Output: gfg
