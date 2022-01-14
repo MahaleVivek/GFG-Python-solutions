@@ -1,0 +1,19 @@
+Given a string, remove spaces from it. 
+
+class Solution:
+    def modify(self, s):
+        # code here
+        space = ""
+        for i in s:
+            if i ==" ":
+                continue
+            else:
+                space += i
+                
+        return space
+        
+    
+#Input:
+#S = "geeks  for geeks"
+#Output: geeksforgeeks
+#Explanation: All the spaces have been removed.
