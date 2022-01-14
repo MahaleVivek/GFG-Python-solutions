@@ -1,0 +1,12 @@
+Given an integer array Arr[] of size N. The task is to find sum of it.
+
+class Solution:
+
+	def _sum(self,arr, n):
+   		# code here
+   		self.arr = arr
+   		add = 0
+   		
+   		for _ in range(n):
+   		    add += arr[_]
+   		return add
