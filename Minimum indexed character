@@ -1,0 +1,18 @@
+Given a string S and another string patt. Find the character in patt that is present at the minimum index in S.
+
+class Solution:
+    def printMinIndexChar(self, S, patt):
+		#Code here
+		arr = []
+		for i in patt:
+		    if i in S:
+		        arr.append(S.index(i))
+		        
+	    if len(arr) > 0:
+	        x = min(arr)
+	        return(S[x])
+	    else:
+	        return('$')
+		    
+#Input: S = "zsyle", patt = "bjz"
+#Output: "z"
