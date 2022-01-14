@@ -1,0 +1,21 @@
+Given an array arr of integers of length N, the task is to find whether it’s possible to construct 
+an integer using all the digits of these numbers such that it would be divisible by 3. If it is 
+possible then print “1” and if not print “0”.
+
+class Solution:
+    def isPossible(self, N, arr):
+        # code here
+        sum1 = 0
+        i = 0
+            
+        sum1 = sum(arr)
+            
+        if((sum1 % 3) == 0):
+            return 1
+        else:
+            return 0
+
+#Input: N = 3
+#arr = {40, 50, 90}
+#Output: 1
+#Explaination: One such number is 405900.
