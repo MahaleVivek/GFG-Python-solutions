@@ -1,0 +1,31 @@
+Given a string with brackets ('[' and ']') and the index of an opening bracket. Find the index of the corresponding closing bracket.
+
+from collections import deque
+
+class Solution:
+    def closing (self,s, pos):
+        # your code here
+        d = deque() 
+  
+        for k in range(pos, len(s)): 
+            # for every closing bracket 
+            if s[k] == ']': 
+                d.popleft() 
+      
+            # Push all starting brackets 
+            elif s[k] == '[': 
+                d.append(s[pos]) 
+      
+            # If deque becomes empty 
+            if not d: 
+                return k 
+      
+        return -1
+     
+     
+Input:
+#S = "[ABC[23]][89]"
+#pos = 0
+#Output: 8
+#Explanation: [ABC[23]][89]
+#The closing bracket corresponding to the opening bracket at index 0 is at index 8.
