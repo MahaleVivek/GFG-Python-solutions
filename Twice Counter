@@ -1,0 +1,18 @@
+Given a list of N words. Count the number of words that appear exactly twice in the list.
+
+class Solution:
+    def countWords(self,List, n):
+        #code here
+        count = 0
+        new_set = list(set(List))
+        for i in range(len(new_set)):
+            if List.count(new_set[i]) == 2:
+                count += 1
+            
+        return count
+
+#Input:
+#N = 3
+#list = {Geeks, For, Geeks}
+#Output: 1
+#Explanation: 'Geeks' is the only word that appears twice. 
